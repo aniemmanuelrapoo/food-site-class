@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navBar{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    letter-spacing: 4px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.nav2{
+    display: flex;
+}
+.navBar li a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 15px;
+}
+.navBar li a:hover{
+    background-color: gray;
+}
+.bgImage{
+    /* background-image: url('../images/hamburger.jpg'); */
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.bgImage h1{
+    font-size: 40px;
+    letter-spacing: 8px;
+    margin-left: 30px;
+    position: absolute;
+}
+.all{
+    padding: 0px 250px;
+}
+.flex1{
+    display: flex;
+    border-bottom: 1px solid #eee;
+    margin: 40px 0px;
+    padding: 60px 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flex1 div{
+    width: 48%;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+.align{
+    text-align: center;
+}
+.text{
+    line-height: 30px;
+}
+.text p{
+    margin: 20px 0px;
+}
+.fontLight{
+    font-weight: lighter;
+}
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flex2 > div{
+    width: 48%;
+}
+.text2 div p{
+    letter-spacing: 6px;
+    font-size: 25px;
+}
+.text2 div{
+    margin: 45px 0px;
+}
+.text2 div span{
+    display: block;
+    margin: 20px 0px;
+}
+.lastForm p{
+    margin: 30px 0px;
+}
+
+input[type=text], input[type=number], input[type=datetime-local]{
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+input[type=submit]{
+    padding: 10px 20px;
+    border: none;
+    margin: 20px 0px;
+}
+.footer{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .flex1 div{
+        width: 100%;
+    }
+    .all{
+        padding: 0px 20px;
+    }
+    .image1{
+        display: none;
+    }
+    .flex2 div{
+        width: 100%;
+    }
+    .nav2{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .all{
+        padding: 0px 30px;
+    }
+    .image1{
+        display: block;
+    }
+    .flex1 div{
+        width: 48%;
+    }
+    .flex2 div{
+        width: 100%;
+    }
+    .para3{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .flex2 div{
+        width: 48%;
+    }
+
+}
